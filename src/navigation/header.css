@@ -1,0 +1,27 @@
+ 
+/* ################### header ################### */
+.header { position: relative; width: 100%;  height: auto; float:left; margin: 0; padding:1rem; border: 0; background: #000; display: flex; justify-content: space-between; align-items: center; }
+.header img { display:block; float:left;width: 100%; max-width: 40px;  margin: 0; padding:0; }
+.header aside { position: relative; display: block; float: right; width: 30px; height: 17px; cursor: pointer; }
+.header aside span { position: absolute; right: 0; width: 100%; height: 2px; background: #fff; border-radius: 2px;}
+.header aside span:nth-of-type(1) { top: 0;}
+.header aside span:nth-of-type(2) { top: 7px;}
+.header aside span:nth-of-type(3) { top: 14px;}
+ 
+.header dl  { display: block; z-index: 5; position: absolute; top: 30%; right:60px; background:none; padding:0; width:auto;  box-sizing:border-box;   }
+.header dl dt { list-style: none; width: auto; float: left; padding:10px; margin: 0 1rem 0 0;  border: none;  background:#000; text-decoration: none; border-radius: 0; box-sizing: border-box;   text-align: center; font-size: 16px; line-height: 1; color: #fff;  cursor:pointer; transition:all 0.5s ease-out; text-align: center; }
+.header dl dt:hover, .header dl dt.active { transition:all 0.5s ease-in; background:#fff;  color: #000;  }
+
+ 
+/* ################### headerMenu ################### */
+.headerMenu { display: block; z-index: 9; position: fixed;left: 50%;top: 50%; transform: translate(-50%, -50%); border:0; border-radius:0; margin: 0;padding:1rem; width:100%; max-width: 1000px; height:100vh;  background-color:#191919;  overflow: hidden; }
+.headerMenu aside { position: relative; display: block; float: right; width: 30px; height: 30px; cursor: pointer; }
+.headerMenu aside span { position: absolute; right: 0; top: 50%; width: 100%; height: 2px; background: #fff;  border-radius: 2px; transition:all 0.5s ease-out; }
+.headerMenu aside:hover span { transition:all 0.5s ease-in; background: #f70505; }
+.headerMenu aside span:nth-of-type(1) {  left: 0; transform: rotate(45deg);}
+.headerMenu aside span:nth-of-type(2) {  right: 0; transform: rotate(-45deg);}
+.headerMenu ul { display: block; float: left; padding:2rem 0 0 0; width:100%; box-sizing:border-box; transition: all 0.5s ease-in-out; }
+.headerMenu ul li { list-style: none; width: 100%; float: left; padding:2rem; margin: 0;  border: none;   border-top: solid 1px #fff; background:transparent; text-decoration: none; border-radius: 0; box-sizing: border-box; text-align: center; font-size: 16px; color: #fff; }
+.headerMenu ul li:first-child { border-top: none; }
+.headerMenu ul li a { cursor:pointer; text-decoration: none; color: #fff; transition:all 0.5s ease-out; }
+.headerMenu ul li a:hover, .headerMenu ul li a.active { transition:all 0.5s ease-in; color: #f70505;  }

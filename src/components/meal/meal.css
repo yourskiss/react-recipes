@@ -1,0 +1,16 @@
+.meal-main { width: 100%; float: left; display: flex; justify-content:space-between; flex-wrap: wrap; align-items:flex-start;   }
+
+.meal-left { width:40%; float: left; margin:0; padding:0; border: 0; }
+.meal-left img {width: 100%; float: left; margin:0;  }
+
+.meal-right { width: 55%; float: right; margin:0; padding:0; border: 0; }
+.meal-right h2 { width: 100%; float: left; text-align: left; font-weight: 600;  font-size: 20px; line-height: 1.2;  color:#000;   }
+.meal-right p { width: 100%; float: left; margin:0.5rem 0 2rem 0; text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999;  }
+.meal-right ul { width: 100%; float: left; }
+.meal-right ul li { list-style: disc; margin: 0 0 0.5rem 1rem;  text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999; }
+.meal-right ul li:first-child { margin: 0 0 1rem 0;  list-style: none; font-weight: 600;  font-size: 18px; color:#000;  }
+
+.meal-bottom {  width: 100%; float: right; margin:2rem 0 0 0; padding:0; }
+.meal-bottom p { width: 100%; float: left; margin: 0 0 2rem 0; text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999;  }
+.meal-bottom p b { margin: 0 0 0.5rem 0; display: block; font-weight: 600;  font-size: 18px;  color:#000; }
+.meal-bottom iframe { display: block;  width: 100%; height: calc(100vw * 0.56); float: left; margin:0; padding:0; border: 0; }

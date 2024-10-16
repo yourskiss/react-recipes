@@ -1,0 +1,7 @@
+
+/* ################### footer ################### */
+.footer {  width: 100%; float: left; padding:1.5rem; background-color:#191919;  }
+.footer p { width: 100%; float: left; margin:0; padding:0; text-align: center;  padding: 0; font-weight: 500; color: #fff; font-size:1rem; }
+.footer p a { text-decoration: none;  color: #fff; transition: all 0.5s ease-out;  }
+.footer p a:hover { color: #f30; text-decoration:underline; transition: all 0.5s ease-in; }
+
