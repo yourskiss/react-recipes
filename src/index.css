@@ -42,3 +42,10 @@ body { background-color: #fff; margin:0;padding:0;box-sizing:border-box;line-hei
 .sectionload div aside { border:5px solid #fff; border-radius: 50%; border-top:5px solid #afcdaf;width:50px;height:50px;-webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; }
 .sectionload div h2 {  width: 100%; float: left; margin: 1rem 0 0 0; padding: 0; text-align: center; color:#fff; line-height: 1; font-size:18px; font-weight:normal;  text-transform: none; } 
  
+
+.homepage { width: 100%; float: left; display: flex; justify-content: center; align-items:stretch; flex-wrap: wrap; }
+.homepage li { list-style: none; margin:1rem; padding: 1rem; border: solid 1px #ccc; width: 30%;  }
+.homepage li h2 {  width: 100%; float: left; margin:0 0 1rem 0; padding: 0; text-align: center; color:#000; line-height: 1; font-size:18px; font-weight:normal;  text-transform: none; } 
+.homepage li aside { width: 100%; float: left; text-align: center; }
+.homepage li aside a { width: auto; display: inline-block;  margin: 0 auto;  padding:0.7rem 2rem; box-sizing: border-box; text-align: center;  background:#191919;  font-weight: 500;  font-size: 16px;  color:#fff;  border:0; transition: all 0.5s ease-out;  border-radius:25px;  text-decoration: none;   cursor: pointer; outline: none; text-transform: uppercase; }
+.homepage li aside a:hover { background: #AFCDAF;  color: #fff;   transition: all 0.5s ease-in; }

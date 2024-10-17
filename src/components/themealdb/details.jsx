@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef  } from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player/youtube';
@@ -11,6 +11,10 @@ export default function MealdbDetails() {
 
 const[recdata, setRecdata] = useState({});
 const { idMeal } = useParams();
+
+ 
+
+ 
 
   useEffect(()=>{
     setLoading(true);
@@ -69,7 +73,7 @@ const { idMeal } = useParams();
               <b>Method:</b>
               { recdata.strInstructions }
             </p>
-            <ReactPlayer controls={true} url={ recdata.strYoutube } width='100%' height='100%'  />
+            <ReactPlayer controls={true} url={ recdata.strYoutube } width='100%'  height="auto" />
           </div>
           
  
