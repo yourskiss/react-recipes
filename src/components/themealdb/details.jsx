@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player/youtube';
-import "./meal.css"
+import "./themealdb.css"
 import Loading from '../../navigation/loading';
 
-export default function Mealdetails() {
+export default function MealdbDetails() {
   const[loading, setLoading] = useState(false);
   const[loadmsg, setLoadmsg] = useState('');
 
@@ -35,6 +35,8 @@ const { idMeal } = useParams();
   },[]);
   return (
     <>
+        <h1>Source : themealdb.com/</h1>
+        
        <div className="meal-main">
           
           <div className='meal-left'>

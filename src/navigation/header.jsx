@@ -46,6 +46,10 @@ export default function Header() {
         </aside>
         <ul>
           <li><NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Home</NavLink></li>
+          
+          <li><NavLink to='/themealdb' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>The Meal DB</NavLink></li>
+
+          <li><NavLink to='/dummyjson' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Dummyjson</NavLink></li>
         </ul>
       </section> 
     }

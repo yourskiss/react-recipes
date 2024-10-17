@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import './home.css';
+import './themealdb.css';
 import Loading from '../../navigation/loading';
 
-export default function Home() {
+export default function MealdbList() {
   const[recdata, setRecdata] = useState({});
   const[loading, setLoading] = useState(false);
   const[loadmsg, setLoadmsg] = useState('');
@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-         <h1>Latest Meals</h1>
+         <h1>Source : themealdb.com/</h1>
          {/* <p>Filter by </p>
          <select>
           <option value=''></option>
@@ -46,7 +46,7 @@ export default function Home() {
             recdata.map && recdata.map((item, index)=><div key={index} className='home-col'>
                 <h2>{item.strMeal}</h2>
                 <img src={item.strMealThumb} alt={item.strMeal} />
-                <aside><Link to={`/meal/${item.idMeal}`}>View More</Link></aside>
+                <aside><Link to={`/mealdb/${item.idMeal}`}>View More</Link></aside>
               </div>)
           }
           </div>

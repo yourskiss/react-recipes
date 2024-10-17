@@ -1,15 +1,23 @@
-.meal-main { width: 100%; float: left; display: flex; justify-content:space-between; flex-wrap: wrap; align-items:flex-start;   }
+h1 { width: 100%; float: left; margin: 0 0 2rem 0 !important; text-align: center; font-weight: 600;  font-size: 14px  !important; line-height: 1.2; color:#191919;  }
 
+
+.home-row { width: 100%; float: left; display: flex; justify-content:center; flex-wrap: wrap; align-items: stretch;   }
+.home-col { max-width: 31.3%; float: left; margin:1%; padding:1rem; border: solid 1px #ccc; }
+.home-col h2 { width: 100%; float: left; text-align: left; font-weight: 600;  font-size: 20px; line-height: 1.2; color:#191919;  }
+.home-col img {width: 100%; float: left; margin: 1rem 0 1rem 0;  }
+.home-col aside { width: 100%; float: left; text-align: center; }
+.home-col a { width: auto; display: inline-block;  margin: 0 auto;  padding:0.7rem 2rem; box-sizing: border-box; text-align: center;  background:#191919;  font-weight: 500;  font-size: 16px;  color:#fff;  border:0; transition: all 0.5s ease-out;  border-radius:25px;  text-decoration: none;   cursor: pointer; outline: none; text-transform: uppercase; }
+.home-col a:hover { background: #AFCDAF;  color: #fff;   transition: all 0.5s ease-in; }
+
+.meal-main { width: 100%; float: left; display: flex; justify-content:space-between; flex-wrap: wrap; align-items:flex-start;   }
 .meal-left { width:40%; float: left; margin:0; padding:0; border: 0; }
 .meal-left img {width: 100%; float: left; margin:0;  }
-
 .meal-right { width: 55%; float: right; margin:0; padding:0; border: 0; }
 .meal-right h2 { width: 100%; float: left; text-align: left; font-weight: 600;  font-size: 20px; line-height: 1.2;  color:#000;   }
 .meal-right p { width: 100%; float: left; margin:0.5rem 0 2rem 0; text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999;  }
 .meal-right ul { width: 100%; float: left; }
 .meal-right ul li { list-style: disc; margin: 0 0 0.5rem 1rem;  text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999; }
 .meal-right ul li:first-child { margin: 0 0 1rem 0;  list-style: none; font-weight: 600;  font-size: 18px; color:#000;  }
-
 .meal-bottom {  width: 100%; float: right; margin:2rem 0 0 0; padding:0; }
 .meal-bottom p { width: 100%; float: left; margin: 0 0 2rem 0; text-align: left; font-weight: 500;  font-size: 16px; line-height: 1.2; color:#999;  }
 .meal-bottom p b { margin: 0 0 0.5rem 0; display: block; font-weight: 600;  font-size: 18px;  color:#000; }
