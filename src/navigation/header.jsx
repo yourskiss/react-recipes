@@ -25,7 +25,7 @@ export default function Header() {
 
   return (<>
     <header className='header'>
-       <img src="../../vite.svg" alt="abc" /> 
+       <img src="../../logo.png" alt="abc" /> 
 
 
       <aside onClick={()=>showHideHandler('open')}>
