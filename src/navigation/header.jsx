@@ -50,6 +50,15 @@ export default function Header() {
           <li><NavLink to='/themealdb' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>The Meal DB</NavLink></li>
 
           <li><NavLink to='/dummyjson' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Dummyjson</NavLink></li>
+
+
+          <li><NavLink to='/sds' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Dashboard - False</NavLink></li>
+          <li><NavLink to='/sds2' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Dashboard - True</NavLink></li>
+          <li><NavLink to='/input' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Input</NavLink></li>
+          <li><NavLink to='/filteruser' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Filter Data</NavLink></li>
+          <li><NavLink to='/cacherequest' className={({ isActive }) => (isActive ? 'active' : '')} onClick={()=>showHideHandler('close')}>Cache Request</NavLink></li>
+          
+          
         </ul>
       </section> 
     }

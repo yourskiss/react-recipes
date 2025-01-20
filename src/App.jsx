@@ -1,4 +1,3 @@
-
 import React from "react";
 import {  BrowserRouter as Router,  Routes,  Route } from "react-router-dom";
 
@@ -10,6 +9,14 @@ import MealdbDetails from "./components/themealdb/details";
 import DummyjsonList from "./components/dummyjson/list";
 import DummyjsonDetails from "./components/dummyjson/details";
 
+import withAuthentication from "./Hoc";
+import Dashboard from "./components/Dashboard";
+const SDS = withAuthentication(Dashboard, false);
+const SDS2 = withAuthentication(Dashboard, true);
+import FormComponent from "./components/Text";
+import { Filteruser } from "./components/Filterdata";
+import { Cacherequest } from "./components/Cacherequest";
+ 
 
 function App() {
   return (
@@ -28,7 +35,13 @@ function App() {
             <Route path="/dummyjson" element={<DummyjsonList />} />
             <Route path="/dj/:id" element={<DummyjsonDetails />} />
 
-            
+            <Route path="/sds" element={<SDS />} />
+            <Route path="/sds2" element={<SDS2 />} />
+            <Route path="/input" element={<FormComponent />} />
+
+            <Route path="/filteruser" element={<Filteruser />} />
+            <Route path="/cacherequest" element={<Cacherequest /> } />
+
           </Routes>
           </div>
           <Footer />
